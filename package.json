@@ -4,7 +4,8 @@
   "description": "dicoding fundamental front-end development submission.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.prod.js",
+    "start-dev": "webpack serve --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/andrewpatasik/pokemon-game/issues"
   },
-  "homepage": "https://github.com/andrewpatasik/pokemon-game#readme"
+  "homepage": "https://github.com/andrewpatasik/pokemon-game#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.8",
+    "axios": "^0.21.1"
+  }
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
+    "build-css": "tailwindcss build src/styles/src/style.css -o src/styles/style.css",
     "start": "webpack serve --config webpack.dev.js"
   },
   "repository": {
@@ -33,6 +34,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.14.8",
-    "axios": "^0.21.1"
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "axios": "^0.21.1",
+    "tailwindcss": "^2.2.7"
   }
 }
